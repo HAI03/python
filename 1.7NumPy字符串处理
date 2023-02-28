@@ -1,0 +1,30 @@
+### 1.7.1 
+add（）函数
+用于字符串的拼接
+np.char.add(['hello'],['world'])#拼接字符串
+array(['helloworld'], dtype='<U10')
+np.char.add(['hello','nihao'],['world','shijie'])#如有多个元素，将相对应元素进行拼接
+array(['helloworld', 'nihaoshijie'], dtype='<U11')#字符串里没有空格
+
+multiply()函数
+用于多次重复数组中的元素
+np.char.multiply('hello',3)
+array('hellohellohello', dtype='<U15')
+np.char.multiply(['hello','hi'],3)
+array(['hellohellohello', 'hihihi'], dtype='<U15')
+
+center()函数
+用于字符串居中，要填充字符
+np.char.center('hello',20,fillchar = '*')#除hello外填充的字符
+array('*******hello********', dtype='<U20')
+np.char.center(['hello','hi'],20,fillchar = '*')
+array(['*******hello********', '*********hi*********'], dtype='<U20')
+
+capitalize()函数和title()函数
+np.char.capitalize('l love china')#字符串首字母大写
+array('L love china', dtype='<U12')
+np.char.title('l love china')#字符串每个单词首字母大写
+array('L Love China', dtype='<U12')
+
+lower()函数和upper()函数
+
